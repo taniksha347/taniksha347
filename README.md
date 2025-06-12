@@ -1,4 +1,7 @@
-## Hi there 👋
+## Hi there 👋 TANIKSHA
+TECH ENTHUSIAST
+FULL STACK DEVELOPER
+
 
 <!--
 **taniksha347/taniksha347** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
