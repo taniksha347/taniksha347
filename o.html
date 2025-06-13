@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="o.css">
+   
+</head>
+<body>
+    <div class="main">
+        <h1>Enter OTP</h1>
+        <button id="btn1"></button>
+        <button id="btn2"></button>
+        <button id="btn3"></button>
+        <button id="btn4"></button>
+        <button id="btn5"></button>
+        <button id="btn6"></button>
+       
+   
+        <button id="ver" onclick="show()">verfiy OTP</button>
+       
+    </div>
+
+   
+   <script>
+
+
+   function show(){
+   
+   
+    let otp = ""
+    for(let i =0; i < 6; i++)
+    {
+        otp +=  Math.floor(Math.random() * 10)
+     
+    }
+   
+
+    document.getElementById("btn1").innerHTML=otp[0]
+    document.getElementById("btn2").innerHTML=otp[1]
+    document.getElementById("btn3").innerHTML=otp[2]
+    document.getElementById("btn4").innerHTML=otp[3]
+    document.getElementById("btn5").innerHTML=otp[4]
+    document.getElementById("btn6").innerHTML=otp[5]
+   
+   
+   }
+</script>
+   
+<!-- Code injected by live-server -->
+<script>
+// <![CDATA[  <-- For SVG support
+if ('WebSocket' in window) {
+(function () {
+function refreshCSS() {
+var sheets = [].slice.call(document.getElementsByTagName("link"));
+var head = document.getElementsByTagName("head")[0];
+for (var i = 0; i < sheets.length; ++i) {
+var elem = sheets[i];
+var parent = elem.parentElement || head;
+parent.removeChild(elem);
+var rel = elem.rel;
+if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+}
+parent.appendChild(elem);
+}
+}
+var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+var address = protocol + window.location.host + window.location.pathname + '/ws';
+var socket = new WebSocket(address);
+socket.onmessage = function (msg) {
+if (msg.data == 'reload') window.location.reload();
+else if (msg.data == 'refreshcss') refreshCSS();
+};
+if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+console.log('Live reload enabled.');
+sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+}
+})();
+}
+else {
+console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+}
+// ]]>
+</script>
+</body>
+</html>
