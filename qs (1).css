@@ -1,0 +1,129 @@
+@keyframes example {
+  0%   {background-color:red; left:100px; top:100px;}
+  5%  {background-color:brown; left:150px; top:-100px;}
+  10%  {background-color:blue; left:200px; top:100px;}
+  15%  {background-color:green; left:250px; top:-100px;}
+  20% {background-color:red; left:300px; top:100px;}
+  25%   {background-color:red; left:350px; top:-100px;}
+  30%  {background-color:brown; left:400px; top:100px;}
+  35%  {background-color:blue; left:450px; top:-100px;}
+  40%  {background-color:green; left:500px; top:100px;}
+  45% {background-color:red; left:550px; top:-100px;}
+  50%   {background-color:red; left:600px; top:100px;}
+  55%  {background-color:brown; left:650px; top:-100px;}
+  60%  {background-color:blue; left:700px; top:100px;}
+  65%  {background-color:green; left:750px; top:-100px;}
+  70% {background-color:red; left:800px; top:100px;}
+  75% {background-color:red; left:850px; top:-100px;}
+  80%   {background-color:red; left:900px; top:100px;}
+  85%  {background-color:brown; left:950px; top:-100px;}
+  90%  {background-color:blue; left:1000px; top:100px;}
+  100%  {background-color:green; left:1050px; top:-100px;}
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    background: linear-gradient(to right, aquamarine, gray, aqua, cadetblue, cyan, gold, cornflowerblue, dimgray, ghostwhite);
+}
+
+
+.container{
+    margin:100px auto; 
+}
+
+#qno{
+    margin:auto;
+    width:50px;
+    height:50px;
+    font-size: x-large;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dispques{
+    margin:auto;
+    padding:10px;
+    text-align: center;
+    height:80px;
+    width:900px;
+    background-color: blue;
+    border-radius: 100px;
+    color:white;
+}
+
+.option{
+    margin:50px auto;
+    display:grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.option label{
+    margin:10px 50px;
+    background-color:burlywood;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px;
+    display: flex;
+    width:auto;
+    height:auto;
+    border-radius: 100px;
+}
+
+.option label:hover{
+    background-color:coral;
+}
+
+.dispbtn{
+    margin:auto;
+    display: flex;
+    text-align: center;
+    background-color: green;
+    border:none;
+    padding: 10px 20px;
+    color:white;
+    font-size: large;
+    border-radius: 100px;
+}
+
+.dispres{
+    margin:auto;
+    text-align: center;
+}
+
+.dispres h2{
+    padding:20px;
+    color:white;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: red;
+    position:relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 0;
+}
+
+.dispres h3{
+    margin:auto;
+    width:350px;
+    height:60px;
+    text-align: center;
+    padding:20px;
+    background-color: aquamarine;
+    font-size: 50px;
+    position: relative;
+    z-index: 100;
+    border-radius: 30px;
+}
+
